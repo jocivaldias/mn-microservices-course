@@ -1,0 +1,7 @@
+POST http://localhost:8080/prices/
+Content-Type: application/json
+
+{
+  "last_price": 123.52,
+  "volume": 1
+}

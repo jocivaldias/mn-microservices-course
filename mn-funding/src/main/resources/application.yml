@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: mnFunding
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5433/mn-funding
+    driverClassName: org.postgresql.Driver
+    username: postgres-user
+    password: postgres-password
+    schema-generate: NONE
+    dialect: POSTGRES
+
+liquibase:
+  datasources:
+    default:
+      enabled: true
+      change-log: 'classpath:db/liquibase-changelog.xml'
+      drop-first: false
+
